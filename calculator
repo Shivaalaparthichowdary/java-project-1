@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.Scanner;
+import java.lang.Math;
+import java.lang.*;
+
+ public class Basiccalculator
+{
+public  static void main(String[] args)
+{
+double num1,num2;
+Scanner sc = new Scanner(System.in);
+System.out.println("enter num1=");
+System.out.println("enter num2=");
+num1=sc.nextDouble();
+num2=sc.nextDouble(); 
+System.out.print("enter the operators (+,-,*,/):");
+char op=sc.next().charAt(0);
+double s=0;
+switch(op)
+{
+case '+':
+s=num1 + num2;
+break; 
+
+case '-':
+s=num1 - num2;
+break;
+
+case '*' :
+s= num1 * num2;
+break;
+
+case '/' :
+s= num1 / num2;
+break;
+
+default:
+    System.out.println("incorrect operator");
+}
+System.out.println("RESULT IS");
+System.out.println(num1 + " " + op + " " + num2 + " == " + s);
+
+}
+}
